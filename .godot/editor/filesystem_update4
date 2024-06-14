@@ -1,6 +1,2 @@
 res://default_env.tres
-res://scenes/Opening/OpeningWithLogo.tscn
-res://Scenes/Opening/OpeningWithLogo.tscn
-res://Scenes/WinScreen/WinScreen.tscn
-res://Scenes/Menus/OptionsMenu/Audio/AudioOptionsMenu.tscn
-res://addons/maaacks_game_template/examples/scenes/WinScreen/WinScreen.tscn
+res://Template/Scenes/WinScreen/WinScreen.tscn
