@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://1pdv76fc2dve"]
+
+[ext_resource type="Script" path="res://Scenes/GameScene/Levels/Level.gd" id="1_k6pla"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Level1" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k6pla")
+
+[node name="MarginContainer" type="MarginContainer" parent="Level1"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="LoseButton" type="Button" parent="Level1/MarginContainer"]
+layout_mode = 2
+text = "Lose"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Level1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="WinButton" type="Button" parent="Level1/MarginContainer2"]
+visible = false
+layout_mode = 2
+text = "Win"
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[connection signal="pressed" from="Level1/MarginContainer/LoseButton" to="Level1" method="_on_lose_button_pressed"]
+[connection signal="pressed" from="Level1/MarginContainer2/WinButton" to="Level1" method="_on_win_button_pressed"]

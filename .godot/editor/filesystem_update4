@@ -1,2 +1,13 @@
 res://default_env.tres
+res://Template/Scenes/Opening/OpeningWithLogo.tscn
 res://Template/Scenes/WinScreen/WinScreen.tscn
+res://Template/Scenes/Menus/OptionsMenu/Audio/AudioOptionsMenu.tscn
+res://Template/Scenes/Opening/Opening.gd
+res://Template/Scenes/Opening/Opening.tscn
+res://Scenes/Opening/OpeningWithLogo.tscn
+res://Scenes/WinScreen/WinScreen.tscn
+res://Scenes/Menus/OptionsMenu/Audio/AudioOptionsMenu.tscn
+res://Scenes/Opening/Opening.tscn
+res://Scenes/GameScene/GameUI.tscn
+res://Scenes/GameScene/Levels/Level1.tscn
+res://addons/maaacks_game_template/base/scenes/Autoloads/SceneLoader.tscn
