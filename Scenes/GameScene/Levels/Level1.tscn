@@ -7408,6 +7408,7 @@ libraries = {
 position = Vector2(0, 1)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_pgcgt")
+disabled = true
 
 [connection signal="pressed" from="Level1/MarginContainer/LoseButton" to="Level1" method="_on_lose_button_pressed"]
 [connection signal="pressed" from="Level1/MarginContainer2/WinButton" to="Level1" method="_on_win_button_pressed"]
