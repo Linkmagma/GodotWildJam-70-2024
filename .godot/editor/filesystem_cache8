@@ -1,10 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718405149
+::res://::1718564180
 default_bus_layout.tres::AudioBusLayout::7962077120942509160::1718401254::0::1::::<><>::
-default_env.tres::Environment::7644774145736501582::1718404959::0::1::::<><>::
+default_env.tres::Environment::7644774145736501582::1718405597::0::1::::<><>::
 override.cfg::TextFile::-1::1718401254::0::1::::<><>::
 README.md::TextFile::-1::1718401321::0::1::::<><>::
-::res://Assets/::1718405038
 ::res://Scenes/::1718404989
 ::res://Scripts/::1718404997
 ::res://Template/::1718404959
@@ -246,6 +245,6 @@ PauseMenu.tscn::PackedScene::5053419581755384174::1718404959::0::1::::<><>::uid:
 Opening.gd::GDScript::-1::1718401254::0::1::::<><>::
 Opening.tscn::PackedScene::4533325443399489168::1718404959::0::1::::<><>::uid://sikc02ddepyt::::res://Template/addons/maaacks_game_template/extras/scenes/Opening/Opening.tscn<>res://Template/Scenes/Opening/Opening.gd
 OpeningWithLogo.tscn::PackedScene::1481297790298788400::1718404959::0::1::::<><>::uid://b5t8hcepjerb1::::res://Template/Scenes/Opening/Opening.tscn<>uid://dlwfbbv2cw7a8::::res://Template/assets/images/logo_vertical_color_dark.png
-::res://Template/Scenes/WinScreen/::1718404959
+::res://Template/Scenes/WinScreen/::1718405597
 WinScreen.gd::GDScript::-1::1718401254::0::1::::<><>::
-WinScreen.tscn::PackedScene::2673928094668273150::1718404959::0::1::::<><>::uid://dt5ses55itjy4::::res://Template/addons/maaacks_game_template/extras/scenes/WinScreen/WinScreen.tscn<>res://Template/Scenes/WinScreen/WinScreen.gd
+WinScreen.tscn::PackedScene::2673928094668273150::1718405597::0::1::::<><>::uid://dt5ses55itjy4::::res://Template/addons/maaacks_game_template/extras/scenes/WinScreen/WinScreen.tscn<>res://Template/Scenes/WinScreen/WinScreen.gd
