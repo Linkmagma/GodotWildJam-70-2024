@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718514515
+::res://::1718547678
 default_bus_layout.tres::AudioBusLayout::7962077120942509160::1718475494::0::1::::<><>::
-default_env.tres::Environment::7644774145736501582::1718514515::0::1::::<><>::
+default_env.tres::Environment::7644774145736501582::1718547371::0::1::::<><>::
 DemoScene.tscn::PackedScene::-1::1718479397::0::1::::<><>::
 icon.png::CompressedTexture2D::7782751385112590858::1718479397::1718479398::1::::<><>::
 override.cfg::TextFile::-1::1718475494::0::1::::<><>::
 README.md::TextFile::-1::1718475494::0::1::::<><>::
 TODO.cfg::TextFile::-1::1718476814::0::1::::<><>::
-::res://addons/::1718476766
+::res://addons/::1718547332
 ::res://addons/maaacks_game_template/::1718475494
 ATTRIBUTION.md::TextFile::-1::1718475494::0::1::::<><>::
 LICENSE.txt::TextFile::-1::1718475494::0::1::::<><>::
@@ -191,7 +191,7 @@ TODOColumn.tscn::PackedScene::2809105870536383375::1718476766::0::1::::<><>::res
 TODOItem.gd::GDScript::-1::1718476766::0::1::::<>HBoxContainer<>::
 TODOItem.tscn::PackedScene::2606353207090236049::1718476766::0::1::::<><>::res://addons/SimpleTODO/TODOItem.gd
 ::res://assets/::1718511270
-::res://assets/Character options/::1718515597
+::res://assets/Character options/::1718546969
 AngelBlueEyesBlackHair.png::CompressedTexture2D::5151922292414701469::1718515466::1718515632::1::::<><>::
 AngelBlueEyesBlondeHair.png::CompressedTexture2D::823457632668990488::1718514996::1718515632::1::::<><>::
 AngelBlueEyesBrownHair.png::CompressedTexture2D::5788262975706320662::1718515417::1718515632::1::::<><>::
@@ -208,7 +208,8 @@ LuciferFuture.png::CompressedTexture2D::8873374794642912055::1718514555::1718515
 LuciferPast.png::CompressedTexture2D::4839979696351704892::1718514817::1718515632::1::::<><>::
 ::res://assets/images/::1718476120
 logo_vertical_color_dark.png::CompressedTexture2D::7977061098639285393::1718475494::1718476120::1::::<><>::
-::res://assets/tilemaps/::1718511280
+::res://assets/tilemaps/::1718546969
+proto_dungeon_11022024_a.png::CompressedTexture2D::1649964976339321965::1718546963::1718546969::1::::<><>::
 roguelikeSheet_transparent.png::CompressedTexture2D::1755264730026655909::1426854691::1718511280::1::::<><>::
 ::res://platformer_controller/::1718479397
 platformer_controller.gd::GDScript::-1::1718479397::0::1::::PlatformerController2D<>CharacterBody2D<>::
@@ -224,8 +225,8 @@ ConfigurableSubViewport.gd::GDScript::-1::1718475494::0::1::::<>SubViewport<>::
 GameUI.gd::GDScript::-1::1718475494::0::1::::<>Control<>::
 GameUI.tscn::PackedScene::7277952602508245888::1718476349::0::1::::<><>::res://Scenes/GameScene/GameUI.gd<>uid://bedjg8boij6ji::::res://Scenes/WinScreen/WinScreen.tscn<>uid://oxhkh2bwf440::::res://Scenes/LoseScreen/LoseScreen.tscn<>res://addons/maaacks_game_template/extras/scripts/PauseMenuController.gd<>uid://cd86c2axyabh3::::res://Scenes/Menus/PauseMenu/PauseMenu.tscn<>res://addons/maaacks_game_template/extras/scripts/LevelLoader.gd<>uid://bkcsjsk2ciff::::res://addons/maaacks_game_template/base/scenes/MusicPlayers/BackgroundMusicPlayer.tscn<>uid://cd0jbh4metflb::::res://addons/maaacks_game_template/base/scenes/LoadingScreen/LoadingScreen.tscn<>res://Scenes/GameScene/ConfigurableSubViewport.gd<>res://Scenes/GameScene/InputDisplayLabel.gd
 InputDisplayLabel.gd::GDScript::-1::1718475494::0::1::::<>Label<>::
-::res://Scenes/GameScene/Levels/::1718514515
-Level1.tscn::PackedScene::1856096982417097522::1718514515::0::1::::<><>::res://Scenes/GameScene/Levels/Level.gd<>uid://0ai7oorbv1c8::::res://assets/tilemaps/roguelikeSheet_transparent.png
+::res://Scenes/GameScene/Levels/::1718547372
+Level1.tscn::PackedScene::1856096982417097522::1718547372::0::1::::<><>::res://Scenes/GameScene/Levels/Level.gd<>uid://0ai7oorbv1c8::::res://assets/tilemaps/roguelikeSheet_transparent.png<>uid://xrixgrfk8c0l::::res://assets/tilemaps/proto_dungeon_11022024_a.png
 Level2.tscn::PackedScene::2052865993324688882::1718476118::0::1::::<><>::res://Scenes/GameScene/Levels/Level.gd
 Level3.tscn::PackedScene::8552110047886571284::1718476118::0::1::::<><>::res://Scenes/GameScene/Levels/Level.gd
 Level.gd::GDScript::-1::1718475494::0::1::::<>Node<>::

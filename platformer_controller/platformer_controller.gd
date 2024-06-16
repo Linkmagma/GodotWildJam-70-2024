@@ -5,6 +5,8 @@ class_name PlatformerController2D
 signal jumped(is_ground_jump: bool)
 signal hit_ground()
 
+var character_image1 : CompressedTexture2D = preload("res://assets/Character options/LuciferPast.png")
+var character_image2 : CompressedTexture2D = preload("res://assets/Character options/LuciferFuture.png")
 
 # Set these to the name of your action (in the Input Map)
 ## Name of input action to move left.
@@ -13,7 +15,8 @@ signal hit_ground()
 @export var input_right : String = "move_right"
 ## Name of input action to jump.
 @export var input_jump : String = "jump"
-
+## Which time period version of Lucifer.
+@export var Character : int = 1
 
 const DEFAULT_MAX_JUMP_HEIGHT = 150
 const DEFAULT_MIN_JUMP_HEIGHT = 60
@@ -149,6 +152,20 @@ func _input(_event):
 		
 	if Input.is_action_just_released(input_jump):
 		holding_jump = false
+	if Input.is_action_just_pressed("MOUSE_BUTTON_LEFT") and Character == 2:
+		max_jump_amount = 2
+		Character = 1
+		$Sprite2D.hframes = 6
+		$Sprite2D.texture = character_image1
+		$AngelCollision.disabled = false
+		$DevilCollision.disabled = true
+	if Input.is_action_just_pressed("MOUSE_BUTTON_RIGHT") and Character == 1:
+		max_jump_amount = 1
+		Character = 2
+		$Sprite2D.hframes = 1
+		$Sprite2D.texture = character_image2
+		$AngelCollision.disabled = true
+		$DevilCollision.disabled = false
 
 
 func _physics_process(delta):
@@ -243,6 +260,8 @@ func is_feet_on_ground():
 
 ## Perform a ground jump, or a double jump if the character is in the air.
 func jump():
+	if Character == 1:
+		$AnimationPlayer.play("jump")
 	if can_double_jump():
 		double_jump()
 	else:

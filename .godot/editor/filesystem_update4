@@ -1,2 +1,10 @@
 res://default_env.tres
 res://Scenes/GameScene/Levels/Level1.tscn
+res://Scenes/Opening/OpeningWithLogo.tscn
+res://Scenes/WinScreen/WinScreen.tscn
+res://Scenes/Menus/OptionsMenu/Audio/AudioOptionsMenu.tscn
+res://Scenes/Opening/Opening.tscn
+res://Scenes/GameScene/GameUI.tscn
+res://addons/maaacks_game_template/base/scenes/Autoloads/SceneLoader.tscn
+res://DemoScene.tscn
+res://platformer_controller/platformer_controller.gd
