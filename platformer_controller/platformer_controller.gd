@@ -77,7 +77,7 @@ var _jump_duration: float = DEFAULT_JUMP_DURATION
 ## Multiplies the gravity by this while falling.
 @export var falling_gravity_multiplier = 1.5
 ## Amount of jumps allowed before needing to touch the ground again. Set to 2 for double jump.
-@export var max_jump_amount = 1
+@export var max_jump_amount = 2
 @export var max_acceleration = 10000
 @export var friction = 20
 @export var can_hold_jump : bool = false
