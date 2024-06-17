@@ -1,2 +1,6 @@
 res://default_env.tres
-res://override.cfg
+res://Scenes/GameScene/Levels/Level1.tscn
+res://Scenes/Opening/OpeningWithLogo.tscn
+res://platformer_controller/platformer_controller.gd
+res://global.gd
+res://Scenes/GameScene/Levels/Level1.gd

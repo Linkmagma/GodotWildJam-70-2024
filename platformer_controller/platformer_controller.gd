@@ -4,6 +4,7 @@ class_name PlatformerController2D
 
 signal jumped(is_ground_jump: bool)
 signal hit_ground()
+signal character_change()
 
 var character_image1 : CompressedTexture2D = preload("res://assets/Character options/LuciferPast.png")
 var character_image2 : CompressedTexture2D = preload("res://assets/Character options/LuciferFuture.png")
@@ -16,7 +17,9 @@ var character_image2 : CompressedTexture2D = preload("res://assets/Character opt
 ## Name of input action to jump.
 @export var input_jump : String = "jump"
 ## Which time period version of Lucifer.
-@export var Character : int = 1
+var Character_1_Pos
+var Character_2_Pos
+
 
 const DEFAULT_MAX_JUMP_HEIGHT = 150
 const DEFAULT_MIN_JUMP_HEIGHT = 60
@@ -134,15 +137,21 @@ func _ready():
 		add_child(jump_buffer_timer)
 		jump_buffer_timer.wait_time = jump_buffer
 		jump_buffer_timer.one_shot = true
+	Character_1_Pos = global_position
+	Character_2_Pos = global_position
 
 
 func _input(_event):
 	acc.x = 0
 	if Input.is_action_pressed(input_left):
 		acc.x = -max_acceleration
+		if Global.Character == 2:
+			$Sprite2D.flip_h = true
 	
 	if Input.is_action_pressed(input_right):
 		acc.x = max_acceleration
+		if Global.Character == 2:
+			$Sprite2D.flip_h = false
 	
 	if Input.is_action_just_pressed(input_jump):
 		holding_jump = true
@@ -152,20 +161,29 @@ func _input(_event):
 		
 	if Input.is_action_just_released(input_jump):
 		holding_jump = false
-	if Input.is_action_just_pressed("MOUSE_BUTTON_LEFT") and Character == 2:
+	if Input.is_action_just_pressed("MOUSE_BUTTON_LEFT") and Global.Character == 2:
+		Character_2_Pos = position
+		global_position = Character_1_Pos
 		max_jump_amount = 2
-		Character = 1
+		Global.Character = 1
 		$Sprite2D.hframes = 6
 		$Sprite2D.texture = character_image1
 		$AngelCollision.disabled = false
 		$DevilCollision.disabled = true
-	if Input.is_action_just_pressed("MOUSE_BUTTON_RIGHT") and Character == 1:
+		falling_gravity_multiplier = 1.2
+		character_change.emit()
+
+	if Input.is_action_just_pressed("MOUSE_BUTTON_RIGHT") and Global.Character == 1:
+		Character_1_Pos = global_position
+		global_position = Character_2_Pos
 		max_jump_amount = 1
-		Character = 2
+		Global.Character = 2
 		$Sprite2D.hframes = 1
 		$Sprite2D.texture = character_image2
 		$AngelCollision.disabled = true
 		$DevilCollision.disabled = false
+		falling_gravity_multiplier = 1.5
+		character_change.emit()
 
 
 func _physics_process(delta):
@@ -260,9 +278,9 @@ func is_feet_on_ground():
 
 ## Perform a ground jump, or a double jump if the character is in the air.
 func jump():
-	if Character == 1:
+	if Global.Character == 1:
 		$AnimationPlayer.play("jump")
-	if can_double_jump():
+	if can_double_jump() and Global.Character == 1:
 		double_jump()
 	else:
 		ground_jump()
