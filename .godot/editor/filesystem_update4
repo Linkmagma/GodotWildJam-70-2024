@@ -1,2 +1,10 @@
 res://default_env.tres
+<<<<<<< HEAD
 res://Scenes/Opening/OpeningWithLogo.tscn
+=======
+res://Scenes/GameScene/Levels/Level1.tscn
+res://Scenes/Opening/OpeningWithLogo.tscn
+res://platformer_controller/platformer_controller.gd
+res://global.gd
+res://Scenes/GameScene/Levels/Level1.gd
+>>>>>>> d4f7073e7f99126ad78d39b6d7cc7e62a4ccb57a

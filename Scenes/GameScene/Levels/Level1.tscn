@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://1pdv76fc2dve"]
+[gd_scene load_steps=14 format=3 uid="uid://1pdv76fc2dve"]
 
+[ext_resource type="Script" path="res://Scenes/GameScene/Levels/Level1.gd" id="1_3m7xt"]
 [ext_resource type="Script" path="res://Scenes/GameScene/Levels/Level.gd" id="1_k6pla"]
 [ext_resource type="Texture2D" uid="uid://0ai7oorbv1c8" path="res://assets/tilemaps/roguelikeSheet_transparent.png" id="2_f7x00"]
 [ext_resource type="Texture2D" uid="uid://xrixgrfk8c0l" path="res://assets/tilemaps/proto_dungeon_11022024_a.png" id="3_phpf2"]
@@ -7063,70 +7064,98 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pgcgt"]
 size = Vector2(8.00001, 14)
 
-[node name="Level1" type="Node2D"]
-scale = Vector2(2.5, 2.5)
-
-[node name="Level1" type="HBoxContainer" parent="."]
+[node name="Control" type="Control"]
+layout_direction = 1
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_k6pla")
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Level1"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_left = 32
-theme_override_constants/margin_top = 32
-theme_override_constants/margin_right = 32
-theme_override_constants/margin_bottom = 32
+[node name="Level1" type="Node2D" parent="."]
+script = ExtResource("1_3m7xt")
 
-[node name="LoseButton" type="Button" parent="Level1/MarginContainer"]
-layout_mode = 2
-text = "Lose"
-
-[node name="MarginContainer2" type="MarginContainer" parent="Level1"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_left = 32
-theme_override_constants/margin_top = 32
-theme_override_constants/margin_right = 32
-theme_override_constants/margin_bottom = 32
-
-[node name="WinButton" type="Button" parent="Level1/MarginContainer2"]
-visible = false
-layout_mode = 2
-text = "Win"
-
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap" parent="Level1"]
 tile_set = SubResource("TileSet_jjeyi")
 format = 2
-layer_0/tile_data = PackedInt32Array(1507328, 1, 5, 1507329, 1, 5, 1507330, 1, 5, 1507331, 1, 5, 1507332, 1, 5, 1507333, 1, 5, 1507334, 1, 5, 1507335, 1, 5, 1507336, 1, 5, 1507337, 1, 5, 1507338, 1, 5, 1507339, 1, 5, 1507340, 1, 5, 1507341, 1, 5, 1507342, 1, 5, 1507343, 1, 5, 1507344, 1, 5, 1507345, 1, 5, 1507346, 1, 5, 1507347, 1, 5, 1507348, 1, 5, 1507349, 1, 5, 1507350, 1, 5, 1507351, 1, 5, 1507352, 1, 5, 1507353, 1, 5, 1507354, 1, 5, 1507355, 1, 5, 1507356, 1, 5, 1507357, 1, 5, 1507358, 1, 5, 1507359, 1, 5, 1376282, 1, 5, 1441818, 1, 5, 1376283, 1, 5, 1441819, 1, 5, 1376284, 1, 5, 1441820, 1, 5, 1376285, 1, 5, 1441821, 1, 5, 1376286, 1, 5, 1441822, 1, 5, 1376287, 1, 5, 1441823, 1, 5, 1310721, 1, 5, 1376257, 1, 5, 1441793, 1, 5, 1310722, 1, 5, 1376258, 1, 5, 1441794, 1, 5, 1310723, 1, 5, 1376259, 1, 5, 1441795, 1, 5, 1179662, 1, 5, 1245198, 1, 5, 1310734, 1, 5, 1376270, 1, 5, 1441806, 1, 5, 1179663, 1, 5, 1245199, 1, 5, 1310735, 1, 5, 1376271, 1, 5, 1441807, 1, 5, 1179664, 1, 5, 1245200, 1, 5, 1310736, 1, 5, 1376272, 1, 5, 1441808, 1, 5, 1179665, 1, 5, 1245201, 1, 5, 1310737, 1, 5, 1376273, 1, 5, 1441809, 1, 5, 1179666, 1, 5, 1245202, 1, 5, 1310738, 1, 5, 1376274, 1, 5, 1441810, 1, 5, 1376268, 1, 5, 1441804, 1, 5, 1376269, 1, 5, 1441805, 1, 5, 1114141, 1, 5, 1179677, 1, 5, 1245213, 1, 5, 1310749, 1, 5, 1114142, 1, 5, 1179678, 1, 5, 1245214, 1, 5, 1310750, 1, 5)
+layer_0/tile_data = PackedInt32Array(1179662, 1, 5, 1245198, 1, 5, 1179663, 1, 5, 1245199, 1, 5, 1179664, 1, 5, 1245200, 1, 5, 1179665, 1, 5, 1245201, 1, 5, 1114130, 1, 5, 1179666, 1, 5, 1245202, 1, 5, 1114141, 1, 5, 1179677, 1, 5, 1245213, 1, 5, 1245184, 1, 5, 1048577, 1, 5, 1114113, 1, 5, 1179649, 1, 5, 1245185, 1, 5, 1048578, 1, 5, 1114114, 1, 5, 1179650, 1, 5, 1245186, 1, 5, 1048579, 1, 5, 1114115, 1, 5, 1179651, 1, 5, 1245187, 1, 5, 1245188, 1, 5, 1245189, 1, 5, 1245190, 1, 5, 1245191, 1, 5, 1245192, 1, 5, 1245193, 1, 5, 1245194, 1, 5, 1245195, 1, 5, 1114124, 1, 5, 1179660, 1, 5, 1245196, 1, 5, 1114125, 1, 5, 1179661, 1, 5, 1245197, 1, 5, 983054, 1, 5, 1048590, 1, 5, 1114126, 1, 5, 983055, 1, 5, 1048591, 1, 5, 1114127, 1, 5, 983056, 1, 5, 1048592, 1, 5, 1114128, 1, 5, 983057, 1, 5, 1048593, 1, 5, 1114129, 1, 5, 983058, 1, 5, 1048594, 1, 5, 1245203, 1, 5, 1245204, 1, 5, 1245205, 1, 5, 1245206, 1, 5, 1245207, 1, 5, 1245208, 1, 5, 1245209, 1, 5, 1114138, 1, 5, 1179674, 1, 5, 1245210, 1, 5, 1114139, 1, 5, 1179675, 1, 5, 1245211, 1, 5, 1114140, 1, 5, 1179676, 1, 5, 1245212, 1, 5, 851997, 1, 5, 917533, 1, 5, 983069, 1, 5, 1048605, 1, 5, 851977, 65537, 4, 851976, 65537, 4, 917512, 65537, 4, 983048, 65537, 4, 983049, 65537, 4, 983050, 65537, 4, 917514, 65537, 4, 917515, 65537, 4, 851979, 65537, 4, 851978, 65537, 4, 917513, 65537, 4)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="TileMap3" type="TileMap" parent="Level1"]
+tile_set = SubResource("TileSet_jjeyi")
+format = 2
+
+[node name="TileMap2" type="TileMap" parent="Level1"]
+tile_set = SubResource("TileSet_jjeyi")
+format = 2
+layer_0/tile_data = PackedInt32Array(1179662, 1, 5, 1245198, 1, 5, 1179663, 1, 5, 1245199, 1, 5, 1179664, 1, 5, 1245200, 1, 5, 1179665, 1, 5, 1245201, 1, 5, 1114130, 1, 5, 1179666, 1, 5, 1245202, 1, 5, 1114141, 1, 5, 1179677, 1, 5, 1245213, 1, 5, 1245184, 1, 5, 1048577, 1, 5, 1114113, 1, 5, 1179649, 1, 5, 1245185, 1, 5, 1048578, 1, 5, 1114114, 1, 5, 1179650, 1, 5, 1245186, 1, 5, 1048579, 1, 5, 1114115, 1, 5, 1179651, 1, 5, 1245187, 1, 5, 1245188, 1, 5, 1245189, 1, 5, 1245190, 1, 5, 1245191, 1, 5, 1245192, 1, 5, 1245193, 1, 5, 1245194, 1, 5, 1245195, 1, 5, 1114124, 1, 5, 1179660, 1, 5, 1245196, 1, 5, 1114125, 1, 5, 1179661, 1, 5, 1245197, 1, 5, 983054, 1, 5, 1048590, 1, 5, 1114126, 1, 5, 983055, 1, 5, 1048591, 1, 5, 1114127, 1, 5, 983056, 1, 5, 1048592, 1, 5, 1114128, 1, 5, 983057, 1, 5, 1048593, 1, 5, 1114129, 1, 5, 983058, 1, 5, 1048594, 1, 5, 1245203, 1, 5, 1245204, 1, 5, 1245205, 1, 5, 1245206, 1, 5, 1245207, 1, 5, 1245208, 1, 5, 1245209, 1, 5, 1114138, 1, 5, 1179674, 1, 5, 1245210, 1, 5, 1114139, 1, 5, 1179675, 1, 5, 1245211, 1, 5, 1114140, 1, 5, 1179676, 1, 5, 1245212, 1, 5, 851997, 1, 5, 917533, 1, 5, 983069, 1, 5, 1048605, 1, 5, 1048597, 65537, 4)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Level1"]
 position = Vector2(48.8, 211.6)
 script = ExtResource("4_h6cp7")
+max_jump_height = 50.0
+min_jump_height = 20.0
+double_jump_height = 33.0
+falling_gravity_multiplier = 1.25
+max_acceleration = 2500
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Level1/CharacterBody2D"]
 texture = ExtResource("5_po0tw")
 hframes = 6
 
-[node name="AngelCollision" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="AngelCollision" type="CollisionShape2D" parent="Level1/CharacterBody2D"]
 scale = Vector2(0.94, 1.043)
 shape = SubResource("RectangleShape2D_a3bd5")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level1/CharacterBody2D"]
 libraries = {
 "": SubResource("AnimationLibrary_6o0rg")
 }
 
-[node name="DevilCollision" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="DevilCollision" type="CollisionShape2D" parent="Level1/CharacterBody2D"]
 position = Vector2(0, 1)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_pgcgt")
 disabled = true
 
-[connection signal="pressed" from="Level1/MarginContainer/LoseButton" to="Level1" method="_on_lose_button_pressed"]
-[connection signal="pressed" from="Level1/MarginContainer2/WinButton" to="Level1" method="_on_win_button_pressed"]
+[node name="Level1" type="HBoxContainer" parent="Level1"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k6pla")
+
+[node name="MarginContainer" type="MarginContainer" parent="Level1/Level1"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="LoseButton" type="Button" parent="Level1/Level1/MarginContainer"]
+layout_mode = 2
+text = "Lose"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Level1/Level1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="WinButton" type="Button" parent="Level1/Level1/MarginContainer2"]
+visible = false
+layout_mode = 2
+text = "Win"
+
+[connection signal="character_change" from="Level1/CharacterBody2D" to="Level1" method="_on_character_body_2d_character_change"]
+[connection signal="pressed" from="Level1/Level1/MarginContainer/LoseButton" to="Level1/Level1" method="_on_lose_button_pressed"]
+[connection signal="pressed" from="Level1/Level1/MarginContainer2/WinButton" to="Level1/Level1" method="_on_win_button_pressed"]
