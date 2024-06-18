@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718564481
+::res://::1718754412
 default_bus_layout.tres::AudioBusLayout::7962077120942509160::1718401254::0::1::::<><>::
-default_env.tres::Environment::7644774145736501582::1718405597::0::1::::<><>::
+default_env.tres::Environment::7644774145736501582::1718567844::0::1::::<><>::
 DemoScene.tscn::PackedScene::4734795221913399325::1718564316::0::1::::<><>::res://platformer_controller/platformer_controller.gd<>uid://di5a1pv5iuup3::::res://icon.png
 icon.png::CompressedTexture2D::7782751385112590858::1718564316::1718564482::1::::<><>::
-override.cfg::TextFile::-1::1718401254::0::1::::<><>::
+override.cfg::TextFile::-1::1718570839::0::1::::<><>::
 README.md::TextFile::-1::1718401321::0::1::::<><>::
 TODO.cfg::TextFile::-1::1718564316::0::1::::<><>::
 ::res://addons/::1718564316
@@ -191,7 +191,7 @@ TODOColumn.tscn::PackedScene::2809105870536383375::1718564316::0::1::::<><>::res
 TODOItem.gd::GDScript::-1::1718564316::0::1::::<>HBoxContainer<>::
 TODOItem.tscn::PackedScene::2606353207090236049::1718564316::0::1::::<><>::res://addons/SimpleTODO/TODOItem.gd
 ::res://assets/::1718564316
-::res://assets/Character options/::1718564316
+::res://assets/Character options/::1718564482
 AngelBlueEyesBlackHair.png::CompressedTexture2D::5151922292414701469::1718564316::1718564482::1::::<><>::
 AngelBlueEyesBlondeHair.png::CompressedTexture2D::823457632668990488::1718564316::1718564482::1::::<><>::
 AngelBlueEyesBrownHair.png::CompressedTexture2D::5788262975706320662::1718564316::1718564482::1::::<><>::
@@ -208,7 +208,7 @@ LuciferFuture.png::CompressedTexture2D::8873374794642912055::1718564316::1718564
 LuciferPast.png::CompressedTexture2D::4839979696351704892::1718564316::1718564482::1::::<><>::
 ::res://assets/images/::1718564316
 logo_vertical_color_dark.png::CompressedTexture2D::7977061098639285393::1718564316::1718564316::1::::<><>::
-::res://assets/tilemaps/::1718564316
+::res://assets/tilemaps/::1718564482
 proto_dungeon_11022024_a.png::CompressedTexture2D::1649964976339321965::1718564316::1718564482::1::::<><>::
 roguelikeSheet_transparent.png::CompressedTexture2D::1755264730026655909::1718564316::1718564482::1::::<><>::
 ::res://platformer_controller/::1718564316

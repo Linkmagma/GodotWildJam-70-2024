@@ -5,3 +5,5 @@
 
 [node name="Opening" instance=ExtResource("1_x84gk")]
 images = Array[Texture2D]([ExtResource("2_k57oc")])
+start_delay = 0.5
+show_loading_screen = false
