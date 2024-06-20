@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" path="res://Scenes/GameScene/Levels/Level.gd" id="1_5y5e3"]
 
-
 [node name="Level3" type="HBoxContainer"]
 anchors_preset = 15
 anchor_right = 1.0

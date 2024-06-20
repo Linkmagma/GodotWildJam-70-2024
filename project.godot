@@ -84,6 +84,11 @@ MOUSE_BUTTON_RIGHT={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="World"
+
 [maaacks_game_template]
 
 disable_plugin_dialogues=true
