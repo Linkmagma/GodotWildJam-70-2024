@@ -86,8 +86,10 @@ MOUSE_BUTTON_RIGHT={
 
 [layer_names]
 
-2d_physics/layer_1="Player"
-2d_physics/layer_2="World"
+2d_render/layer_1="Ground"
+2d_render/layer_2="Background"
+2d_physics/layer_1="Ground"
+2d_physics/layer_2="Background"
 
 [maaacks_game_template]
 

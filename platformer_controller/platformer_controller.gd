@@ -278,8 +278,8 @@ func is_feet_on_ground():
 
 ## Perform a ground jump, or a double jump if the character is in the air.
 func jump():
-	if Global.Character == 1:
-		$AnimationPlayer.play("jump")
+	# if Global.Character == 1:
+	#	$AnimationPlayer.play("jump")
 	if can_double_jump() and Global.Character == 1:
 		double_jump()
 	else:

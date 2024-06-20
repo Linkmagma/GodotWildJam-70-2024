@@ -1,12 +1,3 @@
 res://default_env.tres
-res://Scenes/Opening/OpeningWithLogo.tscn
-res://addons/SimpleTODO/plugin.cfg
-res://DemoScene.tscn
-res://addons/SimpleTODO/ColumnHeader.tscn
-res://addons/SimpleTODO/ItemPlacementHolder.tscn
-res://addons/SimpleTODO/TODO.tscn
-res://Scenes/Opening/Opening.tscn
-res://Scenes/Menus/MainMenu/MainMenu.tscn
 res://Scenes/GameScene/Levels/Level1.tscn
-res://Scenes/GameScene/Levels/Level2.tscn
-res://Scenes/GameScene/Levels/Level3.tscn
+res://platformer_controller/platformer_controller.gd

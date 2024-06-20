@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718860803
+::res://::1718867565
 default_bus_layout.tres::AudioBusLayout::7962077120942509160::1718401254::0::1::::<><>::
-default_env.tres::Environment::7644774145736501582::1718759257::0::1::::<><>::
+default_env.tres::Environment::7644774145736501582::1718867554::0::1::::<><>::
 DemoScene.tscn::PackedScene::4734795221913399325::1718755262::0::1::::<><>::res://platformer_controller/platformer_controller.gd<>uid://di5a1pv5iuup3::::res://icon.png
 global.gd::GDScript::-1::1718754524::0::1::::<>Node<>::
 icon.png::CompressedTexture2D::7782751385112590858::1718564316::1718564482::1::::<><>::
@@ -225,11 +225,11 @@ ConfigurableSubViewport.gd::GDScript::-1::1718564316::0::1::::<>SubViewport<>::
 GameUI.gd::GDScript::-1::1718564316::0::1::::<>Control<>::
 GameUI.tscn::PackedScene::7277952602508245888::1718564316::0::1::::<><>::res://Scenes/GameScene/GameUI.gd<>uid://bedjg8boij6ji::::res://Scenes/WinScreen/WinScreen.tscn<>uid://oxhkh2bwf440::::res://Scenes/LoseScreen/LoseScreen.tscn<>res://addons/maaacks_game_template/extras/scripts/PauseMenuController.gd<>uid://cd86c2axyabh3::::res://Scenes/Menus/PauseMenu/PauseMenu.tscn<>res://addons/maaacks_game_template/extras/scripts/LevelLoader.gd<>uid://bkcsjsk2ciff::::res://addons/maaacks_game_template/base/scenes/MusicPlayers/BackgroundMusicPlayer.tscn<>uid://cd0jbh4metflb::::res://addons/maaacks_game_template/base/scenes/LoadingScreen/LoadingScreen.tscn<>res://Scenes/GameScene/ConfigurableSubViewport.gd<>res://Scenes/GameScene/InputDisplayLabel.gd
 InputDisplayLabel.gd::GDScript::-1::1718564316::0::1::::<>Label<>::
-::res://Scenes/GameScene/Levels/::1718759258
-Level1.gd::GDScript::-1::1718754524::0::1::::<>Node2D<>::
-Level1.tscn::PackedScene::1856096982417097522::1718759258::0::1::::<><>::res://Scenes/GameScene/Levels/Level1.gd<>res://Scenes/GameScene/Levels/Level.gd<>uid://0ai7oorbv1c8::::res://assets/tilemaps/roguelikeSheet_transparent.png<>uid://xrixgrfk8c0l::::res://assets/tilemaps/proto_dungeon_11022024_a.png<>res://platformer_controller/platformer_controller.gd<>uid://ca7r0114p6yrs::::res://assets/Character options/LuciferPast.png
-Level2.tscn::PackedScene::2052865993324688882::1718759239::0::1::::<><>::res://Scenes/GameScene/Levels/Level.gd
-Level3.tscn::PackedScene::8552110047886571284::1718759239::0::1::::<><>::res://Scenes/GameScene/Levels/Level.gd
+::res://Scenes/GameScene/Levels/::1718867554
+Level1.gd::GDScript::-1::1718863173::0::1::::<>Node2D<>::
+Level1.tscn::PackedScene::1856096982417097522::1718867554::0::1::::<><>::res://Scenes/GameScene/Levels/Level1.gd<>res://Scenes/GameScene/Levels/Level.gd<>uid://0ai7oorbv1c8::::res://assets/tilemaps/roguelikeSheet_transparent.png<>uid://xrixgrfk8c0l::::res://assets/tilemaps/proto_dungeon_11022024_a.png<>res://platformer_controller/platformer_controller.gd<>uid://ca7r0114p6yrs::::res://assets/Character options/LuciferPast.png<>uid://dyolglsj3l5ah::::res://assets/Character options/LuciferFuture.png
+Level2.tscn::PackedScene::2052865993324688882::1718861999::0::1::::<><>::res://Scenes/GameScene/Levels/Level.gd
+Level3.tscn::PackedScene::8552110047886571284::1718861999::0::1::::<><>::res://Scenes/GameScene/Levels/Level.gd
 Level.gd::GDScript::-1::1718564316::0::1::::<>Node<>::
 ::res://Scenes/LoadingScreen/::1718564316
 LoadingScreen.gd::GDScript::-1::1718564316::0::1::::<>LoadingScreen<>::
